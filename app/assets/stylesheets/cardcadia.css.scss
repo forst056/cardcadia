@@ -7,6 +7,127 @@
 
 $offWhite: #fefefe;
 
+/* fonts */
+
+@font-face {
+    font-family: 'GoodDogRegular';
+    src: font-url('GoodDog-webfont.eot');
+    src: font-url('GoodDog-webfont.eot?#iefix') format('embedded-opentype'),
+         font-url('GoodDog-webfont.woff') format('woff'),
+         font-url('GoodDog-webfont.ttf') format('truetype'),
+         font-url('GoodDog-webfont.svg#GoodDogRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'UbuntuRegular';
+    src: font-url('Ubuntu-R-webfont.eot');
+    src: font-url('Ubuntu-R-webfont.eot?#iefix') format('embedded-opentype'),
+         font-url('Ubuntu-R-webfont.woff') format('woff'),
+         font-url('Ubuntu-R-webfont.ttf') format('truetype'),
+         font-url('Ubuntu-R-webfont.svg#UbuntuRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'UbuntuItalic';
+    src: font-url('Ubuntu-RI-webfont.eot');
+    src: font-url('Ubuntu-RI-webfont.eot?#iefix') format('embedded-opentype'),
+         font-url('Ubuntu-RI-webfont.woff') format('woff'),
+         font-url('Ubuntu-RI-webfont.ttf') format('truetype'),
+         font-url('Ubuntu-RI-webfont.svg#UbuntuItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'UbuntuBold';
+    src: font-url('Ubuntu-B-webfont.eot');
+    src: font-url('Ubuntu-B-webfont.eot?#iefix') format('embedded-opentype'),
+         font-url('Ubuntu-B-webfont.woff') format('woff'),
+         font-url('Ubuntu-B-webfont.ttf') format('truetype'),
+         font-url('Ubuntu-B-webfont.svg#UbuntuBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'UbuntuBoldItalic';
+    src: font-url('Ubuntu-BI-webfont.eot');
+    src: font-url('Ubuntu-BI-webfont.eot?#iefix') format('embedded-opentype'),
+         font-url('Ubuntu-BI-webfont.woff') format('woff'),
+         font-url('Ubuntu-BI-webfont.ttf') format('truetype'),
+         font-url('Ubuntu-BI-webfont.svg#UbuntuBoldItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'UbuntuLight';
+    src: font-url('Ubuntu-L-webfont.eot');
+    src: font-url('Ubuntu-L-webfont.eot?#iefix') format('embedded-opentype'),
+         font-url('Ubuntu-L-webfont.woff') format('woff'),
+         font-url('Ubuntu-L-webfont.ttf') format('truetype'),
+         font-url('Ubuntu-L-webfont.svg#UbuntuLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'UbuntuLightItalic';
+    src: font-url('Ubuntu-LI-webfont.eot');
+    src: font-url('Ubuntu-LI-webfont.eot?#iefix') format('embedded-opentype'),
+         font-url('Ubuntu-LI-webfont.woff') format('woff'),
+         font-url('Ubuntu-LI-webfont.ttf') format('truetype'),
+         font-url('Ubuntu-LI-webfont.svg#UbuntuLightItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'UbuntuMedium';
+    src: font-url('Ubuntu-M-webfont.eot');
+    src: font-url('Ubuntu-M-webfont.eot?#iefix') format('embedded-opentype'),
+         font-url('Ubuntu-M-webfont.woff') format('woff'),
+         font-url('Ubuntu-M-webfont.ttf') format('truetype'),
+         font-url('Ubuntu-M-webfont.svg#UbuntuMedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'UbuntuMediumItalic';
+    src: font-url('Ubuntu-MI-webfont.eot');
+    src: font-url('Ubuntu-MI-webfont.eot?#iefix') format('embedded-opentype'),
+         font-url('Ubuntu-MI-webfont.woff') format('woff'),
+         font-url('Ubuntu-MI-webfont.ttf') format('truetype'),
+         font-url('Ubuntu-MI-webfont.svg#UbuntuMediumItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'UbuntuCondensedRegular';
+    src: font-url('Ubuntu-C-webfont.eot');
+    src: font-url('Ubuntu-C-webfont.eot?#iefix') format('embedded-opentype'),
+         font-url('Ubuntu-C-webfont.woff') format('woff'),
+         font-url('Ubuntu-C-webfont.ttf') format('truetype'),
+         font-url('Ubuntu-C-webfont.svg#UbuntuCondensedRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 /* text & typography */
 
@@ -14,18 +135,18 @@ h1,
 h2,
 h3,
 h4 {
-	font-family: "Ubuntu-Bold", Helvetica, Arial, sans-serif;
+	font-family: "UbuntuBold", Helvetica, Arial, sans-serif;
 	font-weight: normal;
 	text-transform: uppercase;
 }
 
 h5,
 h6 {
-	font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+	font-family: "UbuntuRegular", Helvetica, Arial, sans-serif;
 }
 
 p {
-	font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+	font-family: "UbuntuRegular", Helvetica, Arial, sans-serif;
 	color: #333;
 	font-size: .875em;
 }
@@ -43,7 +164,7 @@ h2 {
 }
 
 h2.circle-text {
-	font-family: "GoodDog", sans-serif;
+	font-family: "GoodDogRegular", sans-serif;
 	font-size: 3em;
 	text-shadow: -1px -1px 1px rgba(0,0,0,.2), 1px 1px 1px rgba(255,255,255,1);
 	text-align: center;
