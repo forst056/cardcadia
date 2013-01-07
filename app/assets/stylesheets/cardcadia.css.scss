@@ -43,6 +43,15 @@ h2 {
 	font-size: 1.5em;
 }
 
+h2.circle-text {
+	font-family: "GoodDog", sans-serif;
+	font-size: 3em;
+	text-shadow: -1px -1px 1px rgba(0,0,0,.2), 1px 1px 1px rgba(255,255,255,1);
+	text-align: center;
+	position: relative;
+	top: -9px;
+}
+
 h3 {
 	color: #f8f8f9;
 	font-size: 1.25em;
@@ -81,32 +90,63 @@ div.circle {
 	top: 24px;
 }
 
-div.header-arrow {
-	width: 0; 
-	height: 0; 
-	border-left: 30px solid transparent;
-	border-right: 30px solid transparent;
-	border-top: 10px solid rgba(33,33,33,1);
-	position: absolute;
-	right: 160px;
-	bottom: -10px;
-}
+/* images */
 
-div.header-arrow-shadow {
-	height: 10px;
-	width: 60px;
+img.header-arrow {
 	position: absolute;
 	right: 160px;
 	bottom: -12px;
-	border-top: rgba(33,33,33,.3);
+}
+
+img.header-icon {
+	position: absolute;
+	left: 80px;
+	top: 20px;
+	opacity: .1;
+}
+
+#header-alerts-icon {
+	top: 13px;
+}
+
+#header-pt-icon {
+	top: 20px;
+}
+
+#header-st-icon {
+	top: 19px;
 }
 
 /* shapes */
 
-#circle-white {
+#red-circle-highlight {
 	top: 25px;
-	padding-left: 1px;
-	background-color: (255,255,255,.3)	
+	background-color: rgba(255,200,200,.3)	
+}
+
+#red-circle-shadow {
+	top: 23px;
+	background-color: rgba(200,0,0,.5)	
+}
+
+#blue-circle-highlight {
+	top: 25px;
+	background-color: rgba(200,200,255,.3)	
+}
+
+#blue-circle-shadow {
+	top: 23px;
+	background-color: rgba(0,0,255,.5)	
+}
+
+#green-circle-highlight {
+	top: 25px;
+	background-color: rgba(200,255,200,.3)	
+}
+
+#green-circle-shadow {
+	top: 23px;
+	background-color: rgba(0,255,0,.5)	
 }
 
 #header-arrow {
