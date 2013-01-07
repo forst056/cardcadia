@@ -3,7 +3,6 @@
 
 @import "bootstrap";
 
-
 /* mixins, variables, etc. */
 
 $offWhite: #fefefe;
@@ -90,6 +89,32 @@ div.circle {
 	top: 24px;
 }
 
+div.alerts {
+	height: 262px;
+	max-width: 960px;
+	width: auto;
+}
+
+div.viewer {
+	height: 160px;
+	margin: 2px 0px 0px 2px;
+	position: absolute;
+}
+
+div.viewer-scroll {
+	position: relative;
+	width: 80px;
+	height: 160px;
+}
+
+div.left {
+	position: left;
+}
+
+div.right {
+	position: right;
+}
+
 /* images */
 
 img.header-arrow {
@@ -102,7 +127,7 @@ img.header-icon {
 	position: absolute;
 	left: 80px;
 	top: 20px;
-	opacity: .1;
+	opacity: .2;
 }
 
 #header-alerts-icon {
