@@ -186,6 +186,17 @@ h3 {
 	top: -9px;
 }
 
+.scroll-text {
+	font-family: 'UbuntuBold', Helvetica, Arial, sans-serif;
+	font-size: .875em;
+	text-transform: uppercase;
+	text-align: center;
+	position: relative;
+	bottom: -75px;
+	color: rgba(255,255,255,.3);
+	text-shadow: 1px 1px 0px rgba(0,0,0,.15);
+}
+
 /* containers */
 
 div.headblock {
@@ -216,8 +227,9 @@ div.viewer {
 	height: 160px;
 	max-width: 960px;
 	width: auto;
-	margin: 2px 0px 0px 2px;
-	position: relative;
+	margin: 1px 0px 1px 0px;
+	position: absolute;
+	overflow: hidden;
 }
 
 div.viewer-scroll {
@@ -250,6 +262,12 @@ img.headblock-icon {
 	left: 80px;
 	top: 20px;
 	opacity: .2;
+}
+
+img.scroll-arrow {
+	position: relative;
+	top:57px;
+	left: 25px;
 }
 
 #headblock-alerts-icon {
