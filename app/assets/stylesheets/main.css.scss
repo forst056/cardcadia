@@ -7,23 +7,6 @@ Created by Danny Forst
 
 @import "bootstrap";
 
-<<<<<<< HEAD:app/assets/stylesheets/main.css.scss
-=======
-/* fonts */
-
-@font-face {
-    font-family: 'GoodDogRegular';
-    src: font-url('GoodDog-webfont.eot');
-    src: font-url('GoodDog-webfont.eot?#iefix') format('embedded-opentype'),
-         font-url('GoodDog-webfont.woff') format('woff'),
-         font-url('GoodDog-webfont.ttf') format('truetype'),
-         font-url('GoodDog-webfont.svg#GoodDogRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
->>>>>>> css:app/assets/stylesheets/cardcadia.css.scss
-
 /* mixins, variables, etc. */
 
 $offWhite: #fefefe;
@@ -74,16 +57,24 @@ h3 {
 	font-size: 1.25em;
 }
 
-.center {
-	text-align: center;
-}
-
 .left {
 	text-align: left;
 }
 
+.center {
+	text-align: center;
+}
+
 .right {
 	text-align: right;
+}
+
+.f-left {
+	float: left;
+}
+
+.f-right {
+	float: right;
 }
 
 .headblock h1 {
