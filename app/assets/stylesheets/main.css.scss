@@ -69,7 +69,7 @@ h4 {
 
 span.accent {
 	font-family: "UbuntuRegular", Helvetica, Arial, sans-serif;
-	font-size: .75em;
+	font-size: .875em;
 	font-style: italic;
 }
 
@@ -94,7 +94,7 @@ p {
 	font-weight: 400;
 	position: relative;
 	text-align: center;
-	text-shadow: -1px -1px 1px rgba(0,0,0,.2), 1px 1px 1px rgba(255,255,255,1);
+	text-shadow: -1px -1px 1px rgba(0,0,0,.3);
 	top: -9px;
 }
 
@@ -204,8 +204,9 @@ img.headblock-icon {
 .scroll-text {
 	bottom: -75px;
 	color: rgba(255,255,255,.3);
-	font-family: 'UbuntuBold', Helvetica, Arial, sans-serif;
+	font-family: 'UbuntuRegular', Helvetica, Arial, sans-serif;
 	font-size: .875em;
+	font-weight: bold;
 	position: relative;
 	text-align: center;
 	text-shadow: 1px 1px 0px rgba(0,0,0,.15);
@@ -246,12 +247,13 @@ img.scroll-arrow {
 /* ===== Pending Trades ===== */
 
 .trade-user h2 {
-	padding-top: 35px;
+	padding: 35px 0 5px 0;
 	z-index: 1;
 }
 
 .trade-user span {
 	color: #f6f7f8;
+	display: block;
 	margin: 0px;
 	padding: 0px;
 	position: relative;
@@ -260,7 +262,7 @@ img.scroll-arrow {
 
 .trade-user h2 {
 	font-family: "GoodDogRegular", Helvetica, Arial, sans-serif;
-	font-weight: normal;
+	font-weight: bold;
 	font-size: 2.625em;
 	margin: 0;
 	position: relative;
@@ -268,9 +270,24 @@ img.scroll-arrow {
 	text-transform: none;
 }
 
-span.location {
-	color: #f6f7f8;
-	text-shadow: 2px 2px 2px rgba(0,0,0,.3);
+.trade-user ul {
+	display: block;
+	list-style-type: none;
+	position: relative;
+	left: 80px;
+}
+
+.trade-user li {
+	float: left;
+	padding: 0 4px 0 4px;
+}
+
+div.spacer {
+	display: block;
+	height: auto;
+	max-height: 210px;
+	min-height: 30px;
+	width: 100%;
 }
 
 div.pending-trade {
@@ -284,11 +301,35 @@ div.pending-trade {
 div.trade-user {
 	height: auto;
 	max-height: 340px;
-	min-height: 160px;
-	opacity: .8;
+	min-height: 180px;
 	padding: 10px;
 	position: absolute;
 	width: 300px;
+}
+
+div.trade-info {
+	color: white;
+	display: block;
+	float: left;
+	height: auto;
+	left: 320px;
+	max-width: 540px;
+	min-height: 180px;
+	min-width: 320px;
+	opacity: 0;
+	padding: 10px;
+	position: relative;
+	width: auto;
+}
+
+div.trade-details {
+	display: block;
+	float: right;
+	height: auto;
+	max-height: 360px;
+	min-height: 180px;
+	padding: 10px;
+	width: 60px;
 }
 
 img.name-bg {
@@ -299,9 +340,14 @@ img.name-bg {
 
 img.new-indicator {
 	float: left;
-	margin-right: 5px;
+	margin-right: 2px;
+	position: relative;
+	top: 1px;
 }
 
+span.location {
+	text-transform: uppercase;
+}
 
 /* ===== Gradients ===== */
 

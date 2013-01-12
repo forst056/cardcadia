@@ -14,9 +14,9 @@
 		<div class="circle red-gradient">
 			<h2>8</h2>	<!-- insert dynamic code for ALERTS -->
 		</div>
-		<img src="/assets/alerts.png" class="headblock-icon" id="alerts-icon" >
+		<img src="<%= image_path "/assets/alerts.png" %>" class="headblock-icon" id="alerts-icon" >
 			<h1>Alerts</h1>		
-		<img src="/assets/headblock-arrow.png" class="headblock-arrow" >
+		<img src="<%= image_path "/assets/headblock-arrow.png" %>" class="headblock-arrow" >
 	</div>
 
 
@@ -24,11 +24,11 @@
 
 	<div id="viewer">
 		<div class="viewer-scroll light-gray-gradient" id="left-viewer">
-			<img src="/assets/left-scroll-arrow.png" class="scroll-arrow" >
+			<img src="<%= image_path "/assets/left-scroll-arrow.png" %>" class="scroll-arrow" >
 			<div class="scroll-text">Previous</div>
 		</div>
 		<div class="viewer-scroll light-gray-gradient" id="right-viewer">
-			<img src="/assets/right-scroll-arrow.png" class="scroll-arrow" >
+			<img src="<%= image_path "/assets/right-scroll-arrow.png" %>" class="scroll-arrow" >
 			<div class="scroll-text">Next</div>
 		</div>
 		<div class="alerts-box red-gradient"></div>
@@ -56,9 +56,9 @@
 	<div class="circle blue-gradient">
 		<h2>3</h2> 	<!-- insert dynamic code for PENDING TRADES -->
 	</div>
-	<img src="/assets/pending-trade.png" class="headblock-icon" id="pt-icon" >
+	<img src="<%= image_path "/assets/pending-trade.png" %>" class="headblock-icon" id="pt-icon" >
 		<h1>Pending Trades</h1>
-	<img src="/assets/headblock-arrow.png" class="headblock-arrow" >
+	<img src="<%= image_path "/assets/headblock-arrow.png" %>" class="headblock-arrow" >
 </div>
 
 
@@ -66,14 +66,21 @@
 
 <div class="container pending-trade bottom-border">
 	<div class="trade-user blue-gradient">
-		<img src="/assets/new-indicator.png" class="new-indicator" >
+		<img src="<%= image_path "/assets/new-indicator.png" %>" class="new-indicator" >
 		<span class="f-left accent">Awaiting Approval</span>
 		<span class="right location">Local</span>
 		<h2 class="center">Pete T.</h2>
-		<img src="/assets/name-bg.png" class="name-bg" >
+		<img src="<%= image_path "/assets/name-bg.png" %>" class="name-bg" >
 		<span class="center accent">Brooklyn, NY</span>
-
+		<div class="spacer"><div/>
+		<ul>
+			<li><img src="<%= image_path "/assets/inventory-outline.png" %>"></li>
+			<li><img src="<%= image_path "/assets/want-list-outline.png" %>"></li>
+			<li><img src="<%= image_path "/assets/profile-outline.png" %>"></li>
+		</ul>
 	</div>
+	<div class="trade-info"></div>
+	<div class="trade-details light-gray-gradient"></div>
 </div>
 
 
@@ -87,9 +94,9 @@
 	<div class="circle green-gradient">
 		<h2 class="circle-text">15</h2> <!-- insert dynamic code for SUGGESTED TRADES -->
 	</div>
-	<img src="/assets/suggested-trades.png" class="headblock-icon" id="st-icon" >
+	<img src="<%= image_path "/assets/suggested-trades.png" %>" class="headblock-icon" id="st-icon" >
 	<h1>Suggested Trades</h1>
-	<img src="/assets/headblock-arrow.png" class="headblock-arrow" >
+	<img src="<%= image_path "/assets/headblock-arrow.png" %>" class="headblock-arrow" >
 </div>
 
 <div class="container"><!-- suggested trades --></div>
