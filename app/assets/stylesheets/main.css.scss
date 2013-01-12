@@ -270,11 +270,17 @@ img.scroll-arrow {
 	text-transform: none;
 }
 
+.trade-info h3 {
+	color: #333;
+	font-size: .875em;
+	position: absolute;
+}
+
 .trade-user ul {
-	display: block;
 	list-style-type: none;
-	position: relative;
-	left: 80px;
+	position: absolute;
+	left: 90px;
+	bottom: 1px;
 }
 
 .trade-user li {
@@ -282,13 +288,21 @@ img.scroll-arrow {
 	padding: 0 4px 0 4px;
 }
 
-div.spacer {
-	display: block;
-	height: auto;
-	max-height: 210px;
-	min-height: 30px;
-	width: 100%;
+h3.yours {
+	left: 80px;
 }
+
+h3.theirs {
+	left: 320px;
+}
+
+
+/* -- To be used as adjustable spacer between user location and quick links; buggy
+div.spacer {
+	min-height: 30px;
+	max-height: 210px;
+	height: auto;
+}*/
 
 div.pending-trade {
 	height: auto;
@@ -316,10 +330,10 @@ div.trade-info {
 	max-width: 540px;
 	min-height: 180px;
 	min-width: 320px;
-	opacity: 0;
 	padding: 10px;
 	position: relative;
 	width: auto;
+
 }
 
 div.trade-details {
