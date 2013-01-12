@@ -11,52 +11,6 @@ Created by Danny Forst
 
 $offWhite: #fefefe;
 
-
-/* ===== Text & Typography ===== */
-
-h1,
-h2,
-h3 {
-	font-family: "UbuntuMedium", Helvetica, Arial, sans-serif;
-	text-transform: uppercase;
-	font-weight: normal;
-}
-
-h4 {
-	font-family: "UbuntuRegular", Helvetica, Arial, sans-serif;
-	font-size: .75em;
-	text-transform: uppercase;
-}
-
-h5,
-h6 {
-	font-family: "UbuntuItalic", Helvetica, Arial, sans-serif;
-	font-size: .75em;
-}
-
-p {
-	color: #333;
-	font-family: "UbuntuRegular", Helvetica, Arial, sans-serif;
-	font-size: .875em;
-}
-
-h1 {
-	color: #fff;
-	font-size: 1.875em;
-	text-align: left;
-	text-shadow: 4 4 4 #333;
-}
-
-h2 {
-	color: #f6f7f8;
-	font-size: 1.5em;
-}
-
-h3 {
-	color: #f8f8f9;
-	font-size: 1.25em;
-}
-
 .left {
 	text-align: left;
 }
@@ -77,7 +31,84 @@ h3 {
 	float: right;
 }
 
-/* ===== Containers ===== */
+.bottom-border {
+	border-bottom: 1px solid rgba(30,30,30,.3)
+}
+
+
+/* ===== Text & Typography ===== */
+
+h1,
+h2,
+h3 {
+	color: #f6f7f8;
+	font-family: "UbuntuRegular", Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+h1 {
+	font-size: 1.875em;
+	text-shadow: 4 4 4 #333;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+h3 {
+	color: #f8f8f9;
+	font-size: 1.25em;
+}
+
+h4 {
+	font-family: "UbuntuRegular", Helvetica, Arial, sans-serif;
+	font-size: .75em;
+	text-transform: uppercase;
+}
+
+span.accent {
+	font-family: "UbuntuRegular", Helvetica, Arial, sans-serif;
+	font-size: .75em;
+	font-style: italic;
+}
+
+p {
+	color: #333;
+	font-family: "UbuntuRegular", Helvetica, Arial, sans-serif;
+	font-size: .875em;
+}
+
+
+/* ===== Headblock ===== */
+
+.headblock h1 {
+	position: relative;
+	left: 100px;
+	max-width: 840px;
+}
+
+.headblock h2 {
+	font-family: "GoodDogRegular", sans-serif;
+	font-size: 3em;
+	font-weight: 400;
+	position: relative;
+	text-align: center;
+	text-shadow: -1px -1px 1px rgba(0,0,0,.2), 1px 1px 1px rgba(255,255,255,1);
+	top: -9px;
+}
+
+#alerts-icon {
+	top: 13px;
+}
+
+#pt-icon {
+	top: 20px;
+}
+
+#st-icon {
+	top: 19px;
+}
 
 div.headblock {
 	box-shadow: 0px 2px 2px rgba(0,0,0,.3);
@@ -90,46 +121,16 @@ div.headblock {
 	width: auto;
 }
 
-div.alerts {
-	height: 260px;
-	margin-bottom: 2px;
-	max-width: 960px;
-	width: auto;
-}
-
-div.alerts-box {
+div.circle {
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
 	float: left;
-	height: 160px;
-	margin: 0px 4px 0px 4px;
-	position: relative;
-	width: 150px;
-}
-
-div.viewer {
-	height: 160px;
-	max-width: 960px;
-	overflow: hidden;
+	height: 50px;
 	position: absolute;
-	width: auto;
+	top: 24px;
+	width: 50px;
 }
-
-div.viewer-scroll {
-	height: 160px;
-	position: relative;
-	width: 80px;
-}
-
-div.left {
-	float: left;
-	margin-right: 4px;
-}
-
-div.right {
-	float: right;
-	margin-left: 4px;
-}
-
-/* ===== Images ===== */
 
 img.headblock-arrow {
 	bottom: -12px;
@@ -143,37 +144,6 @@ img.headblock-icon {
 	opacity: .2;
 	position: absolute;
 	top: 20px;
-}
-
-img.scroll-arrow {
-	left: 25px;
-	position: relative;
-	top: 57px;
-}
-
-img#alerts-icon {
-	top: 13px;
-}
-
-img#pt-icon {
-	top: 20px;
-}
-
-img#st-icon {
-	top: 19px;
-}
-
-/* ===== Shapes ===== */
-
-div.circle {
-	-moz-border-radius: 25px;
-	-webkit-border-radius: 25px;
-	border-radius: 25px;
-	float: left;
-	height: 50px;
-	position: absolute;
-	top: 24px;
-	width: 50px;
 }
 
 #red-circle-highlight {
@@ -214,10 +184,93 @@ div.circle {
 	width: 0; 
 }
 
+
+/* ===== Alerts ===== */
+
+#alerts {
+	height: 260px;
+	margin-bottom: 2px;
+	max-width: 960px;
+	width: auto;
+}
+
+#viewer {
+	height: 160px;
+	max-width: 960px;
+	overflow: hidden;
+	width: auto;
+}
+
+.scroll-text {
+	bottom: -75px;
+	color: rgba(255,255,255,.3);
+	font-family: 'UbuntuBold', Helvetica, Arial, sans-serif;
+	font-size: .875em;
+	position: relative;
+	text-align: center;
+	text-shadow: 1px 1px 0px rgba(0,0,0,.15);
+	text-transform: uppercase;
+}
+
+div.alerts-box {
+	float: left;
+	height: 160px;
+	margin: 0px 4px 0px 4px;
+	position: relative;
+	width: 150px;
+}
+
+div.viewer-scroll {
+	height: 160px;
+	width: 80px;
+}
+
+#left-viewer {
+	float: left;
+	margin-right: 4px;
+}
+
+#right-viewer {
+	float: right;
+	margin-left: 4px;
+}
+
+img.scroll-arrow {
+	left: 25px;
+	position: relative;
+	top: 57px;
+}
+
+
+
 /* ===== Pending Trades ===== */
 
-.bottom-border {
-	border-bottom: 1px solid rgba(30,30,30,.3)
+.trade-user h2 {
+	padding-top: 35px;
+	z-index: 1;
+}
+
+.trade-user span {
+	color: #f6f7f8;
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+	text-shadow: 2px 2px 2px rgba(0,0,0,.3);
+}
+
+.trade-user h2 {
+	font-family: "GoodDogRegular", Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-size: 2.625em;
+	margin: 0;
+	position: relative;
+	text-shadow: 2px 2px 2px rgba(0,0,0,.3);
+	text-transform: none;
+}
+
+span.location {
+	color: #f6f7f8;
+	text-shadow: 2px 2px 2px rgba(0,0,0,.3);
 }
 
 div.pending-trade {
@@ -229,32 +282,25 @@ div.pending-trade {
 }
 
 div.trade-user {
-	float: left;
 	height: auto;
 	max-height: 340px;
 	min-height: 160px;
 	opacity: .8;
 	padding: 10px;
+	position: absolute;
 	width: 300px;
 }
 
-div.new-indicator {
+img.name-bg {
+	left: 70px;
+	position: absolute;
+	top: 50px;
+}
+
+img.new-indicator {
 	float: left;
 	margin-right: 5px;
 }
-
-div.location {
-	float: right;
-}
-
-div.name {
-}
-
-img.name-bg {
-	position: relative;
-	left: 61px;
-}
-
 
 
 /* ===== Gradients ===== */
