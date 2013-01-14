@@ -10,6 +10,7 @@ Created by Danny Forst
 /* ===== Mixins, Variables, etc. ===== */
 
 $offWhite: #fefefe;
+$margin: margin;
 
 .left {
 	text-align: left;
@@ -200,7 +201,7 @@ img.headblock-icon {
 
 .scroll-text {
 	bottom: -75px;
-	color: rgba(255,255,255,.3);
+	color: rgba(255,255,255,.8);
 	font-family: 'UbuntuRegular', Helvetica, Arial, sans-serif;
 	font-size: .875em;
 	font-weight: bold;
@@ -282,6 +283,7 @@ img.scroll-arrow {
 .trade-user li {
 	float: left;
 	padding: 0 4px 0 4px;
+	background-color: transparent;
 }
 
 h3.yours {
@@ -374,6 +376,15 @@ div.trade-details {
 	padding: 10px;
 	width: 60px;
 	position: relative;
+	opacity: .9;
+}
+
+div.trade-details:hover {
+	opacity: 1;
+}
+
+div.trade-details:hover img {
+	left: 17px;
 }
 
 .trade-details img {
