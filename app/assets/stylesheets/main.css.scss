@@ -38,9 +38,7 @@ $offWhite: #fefefe;
 
 /* ===== Text & Typography ===== */
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
 	color: #f6f7f8;
 	font-family: "UbuntuRegular", Helvetica, Arial, sans-serif;
 	text-transform: uppercase;
@@ -67,13 +65,12 @@ h4 {
 	text-transform: uppercase;
 }
 
-span.accent {
+span {
 	font-family: "UbuntuRegular", Helvetica, Arial, sans-serif;
 	font-size: .875em;
-	font-style: italic;
 }
 
-p {
+ul, li, p {
 	color: #333;
 	font-family: "UbuntuRegular", Helvetica, Arial, sans-serif;
 	font-size: .875em;
@@ -135,7 +132,7 @@ div.circle {
 img.headblock-arrow {
 	bottom: -12px;
 	position: absolute;
-	right: 160px;
+	right: 80px;
 	z-index: 2;
 }
 
@@ -272,8 +269,7 @@ img.scroll-arrow {
 
 .trade-info h3 {
 	color: #333;
-	font-size: .875em;
-	position: absolute;
+	font-size: 1em;
 }
 
 .trade-user ul {
@@ -289,20 +285,58 @@ img.scroll-arrow {
 }
 
 h3.yours {
+	position: absolute;
 	left: 80px;
+	margin: 0;
 }
 
 h3.theirs {
+	display: block;
+	position: absolute;
 	left: 320px;
+	margin: 0;
 }
 
+span.accent {
+	font-weight: lighter;
+	font-style: italic;
+}
 
-/* -- To be used as adjustable spacer between user location and quick links; buggy
-div.spacer {
-	min-height: 30px;
-	max-height: 210px;
-	height: auto;
-}*/
+table.cards {
+	border: none;
+	margin: 10px 0 10px 20px;
+	font-size: 1em;
+	font-family: 'UbuntuRegular', Helvetica, Arial, sans-serif;
+	color: #333;
+	table-layout: fixed;
+
+}
+
+.cards th {
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: left;
+	padding-bottom: 10px;
+}
+
+.cards td {
+	padding-bottom: 10px;
+}
+
+.cards td.qty {
+	width: 10px;
+	text-align: right;
+}
+
+.trade-info td.rarity {
+	width: 15px;
+	text-align: right;
+}
+
+.trade-info td.name {
+	text-align: left;
+	width: 240px;
+}
 
 div.pending-trade {
 	height: auto;
@@ -323,27 +357,29 @@ div.trade-user {
 
 div.trade-info {
 	color: white;
-	display: block;
 	float: left;
-	height: auto;
-	left: 320px;
-	max-width: 540px;
 	min-height: 180px;
-	min-width: 320px;
+	height: auto;
 	padding: 10px;
+	width: 540px;
 	position: relative;
-	width: auto;
-
+	left: 320px;
 }
 
 div.trade-details {
-	display: block;
 	float: right;
 	height: auto;
 	max-height: 360px;
 	min-height: 180px;
 	padding: 10px;
 	width: 60px;
+	position: relative;
+}
+
+.trade-details img {
+	left: 15px;
+	position: relative;
+	top: 57px;
 }
 
 img.name-bg {
@@ -357,6 +393,13 @@ img.new-indicator {
 	margin-right: 2px;
 	position: relative;
 	top: 1px;
+}
+
+img.pt-background {
+	position: absolute;
+	left: 210px;
+	top: 70px;
+	opacity: .03;
 }
 
 span.location {

@@ -13,7 +13,7 @@
 }
 
 @font-face {
-    font-family: 'GoodDogRegular';
+    font-family: 'GoodDogRegular'; /*bold*/
     src: url('GoodDog-webfont.eot');
     src: url('GoodDog-webfont.eot?#iefix') format('embedded-opentype'),
          url('GoodDog-webfont.woff') format('woff'),
@@ -37,7 +37,7 @@
 }
 
 @font-face {
-    font-family: 'UbuntuRegular';
+    font-family: 'UbuntuRegular'; /*italic*/
     src: url('Ubuntu-RI-webfont.eot');
     src: url('Ubuntu-RI-webfont.eot?#iefix') format('embedded-opentype'),
          url('Ubuntu-RI-webfont.woff') format('woff'),
@@ -49,7 +49,7 @@
 }
 
 @font-face {
-    font-family: 'UbuntuRegular';
+    font-family: 'UbuntuRegular'; /*bold*/
     src: url('Ubuntu-B-webfont.eot');
     src: url('Ubuntu-B-webfont.eot?#iefix') format('embedded-opentype'),
          url('Ubuntu-B-webfont.woff') format('woff'),
@@ -61,7 +61,7 @@
 }
 
 @font-face {
-    font-family: 'UbuntuBoldItalic';
+    font-family: 'UbuntuRegular'; /*bold italic*/
     src: url('Ubuntu-BI-webfont.eot');
     src: url('Ubuntu-BI-webfont.eot?#iefix') format('embedded-opentype'),
          url('Ubuntu-BI-webfont.woff') format('woff'),
@@ -73,26 +73,26 @@
 }
 
 @font-face {
-    font-family: 'UbuntuLight';
+    font-family: 'UbuntuRegular'; /*light*/
     src: url('Ubuntu-L-webfont.eot');
     src: url('Ubuntu-L-webfont.eot?#iefix') format('embedded-opentype'),
          url('Ubuntu-L-webfont.woff') format('woff'),
          url('Ubuntu-L-webfont.ttf') format('truetype'),
          url('Ubuntu-L-webfont.svg#UbuntuLight') format('svg');
-    font-weight: normal;
+    font-weight: lighter;
     font-style: normal;
 
 }
 
 @font-face {
-    font-family: 'UbuntuLightItalic';
+    font-family: 'UbuntuRegular'; /*light italic*/
     src: url('Ubuntu-LI-webfont.eot');
     src: url('Ubuntu-LI-webfont.eot?#iefix') format('embedded-opentype'),
          url('Ubuntu-LI-webfont.woff') format('woff'),
          url('Ubuntu-LI-webfont.ttf') format('truetype'),
          url('Ubuntu-LI-webfont.svg#UbuntuLightItalic') format('svg');
-    font-weight: normal;
-    font-style: normal;
+    font-weight: lighter;
+    font-style: italic;
 
 }
 
