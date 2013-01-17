@@ -1,10 +1,8 @@
 Cardcadia::Application.routes.draw do
-  root to: "static_pages#home"
+  root to: "static_pages#portfolio"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
-
-  match '/portfolio', to: 'static_pages#portfolio'
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
