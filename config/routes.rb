@@ -1,5 +1,14 @@
 Cardcadia::Application.routes.draw do
+  resources :cards
+  resources :users
+  resources :inventories
+
   root to: "static_pages#home"
+
+  match "cards" => "cards#index"
+  match "edit" => "cards#edit"
+
+  match "users" => "users#index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
