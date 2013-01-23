@@ -1,12 +1,23 @@
 Cardcadia::Application.routes.draw do
+
+  #------ Resources -----
+
   resources :cards
-  resources :users
-  resources :inventories
+
+  resources :users do
+    resources :cards
+    resources :inventories
+  end
+  
+  resources :inventories do
+    resources :cards
+  end
+
+  #------ Routes -------
 
   root to: "static_pages#home"
 
   match "cards" => "cards#index"
-  match "edit" => "cards#edit"
 
   match "users" => "users#index"
 
