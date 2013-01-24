@@ -1,0 +1,16 @@
+<table class="backend">
+	<tr>
+		<th>ID</th>
+		<th>User</th>
+		<th>Card</th>
+		<th></th>
+	</tr>
+	<% @inventories.each do |inventory, user, card| %>
+	<tr>
+		<td><%= inventory.id %></td>
+		<td><%= link_to inventory.user_id, inventories_path %></td>
+		<td><%= link_to inventory.card_id, inventories_path %></td>
+		<td><%= link_to 'Delete', inventory, method: :delete, data: { confirm: 'Are you sure' } %>
+	</tr>
+	<% end %>
+</table>

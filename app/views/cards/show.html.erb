@@ -1,0 +1,11 @@
+<h1 class="backend">Card Details</h1>
+<div>Card Name: <%= @card.card_name %></div>
+<div>Mana Cost: <%= @card.mana_cost %></div>
+<div>Type: <%= @card.type_line %></div>
+<div>Expansion: <%= @card.expansion %></div>
+<div>Abilities: <%= @card.abilities %></div>
+<div>Flavor Text: <%= @card.flavor_text %></div>
+<div>Artist Info: <%= @card.artist_info %></div>
+<div>Collector #: <%= @card.collector_number %></div>
+<div>P / T: <%= @card.power %> / <%= @card.toughness %></div>
+<%= link_to 'Back', cards_path %>

@@ -1,0 +1,29 @@
+<div class="backend">
+	<h1 class="backend">Users</h1>
+	<table class="backend">
+		<tr>
+			<th>ID</th>
+			<th>First name</th>
+			<th>Last name</th>
+			<th>Email</th>
+			<th></th>
+			<th></th>
+			<th></th>
+		</tr>
+		
+		<% @users.each do |user| %>
+			<tr>
+			<td><%= user.id %></td>
+			<td><%= user.first_name %></td>
+			<td><%= user.last_name %></td>
+			<td><%= user.email %></td>
+			<td><%= link_to 'Show', user %>
+			<td><%= link_to 'Edit', edit_user_path(user) %>
+			<td><%= link_to 'Delete', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+			<td><%= link_to 'Add Cards', new_inventory_path(user) %>
+			</tr>
+			<% end %>
+	</table>
+
+<%= link_to 'New User', new_user_path %><br>
+<%= link_to 'Cards', cards_path %>

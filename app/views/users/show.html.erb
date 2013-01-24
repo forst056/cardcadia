@@ -1,0 +1,26 @@
+<div class="backend"><h1><%= @user.first_name %> <%= @user.last_name %></h1></div>
+<table class="backend">
+	<tr>
+		<th>Card Name</th>
+		<th>Type</th>
+		<th>Expansion</th>
+		<th>Mana Cost</th>
+		<th>Power / Toughness</th>
+		<th>Est. Value</th>
+		<th></th>
+	</tr>
+	<% @user.cards.each do |card, inventory| %>
+	<tr>
+		<td><%= card.card_name %></td>
+		<td><%= card.type_line %></td>
+		<td><%= card.expansion %></td>
+		<td><%= card.mana_cost %></td>
+		<td><%= card.power %> / <%= card.toughness %></td>
+		<td></td> <!-- this will house the card value -->
+		<td><%= link_to 'Delete', inventory.user_id(@user.id).card_id, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+	</tr>
+	<% end %>
+
+<%= link_to 'Edit', edit_user_path(@user) %> | 
+<%= link_to 'Back', users_path %> | 
+<%= link_to 'Add Cards to Inventory', inventory_path %>

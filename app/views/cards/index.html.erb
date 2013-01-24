@@ -1,0 +1,26 @@
+<div class="backend">
+	<h1 class="backend">Cards</h1>
+	<table class="backend">
+		<th>ID</th>
+		<th>Card name</th>
+		<th>Card cost</th>
+		<th>Power</th>
+		<th>Toughness</th>
+		<th></th>
+		<th></th>
+	</tr>
+
+	<% @cards.each do |card| %>
+		<tr>
+		<td><%= card.id %></td>
+		<td><%= card.card_name %></td>
+		<td><%= card.mana_cost %></td>
+		<td><%= card.power %></td>
+		<td><%= card.toughness %></td>
+		<td><%= link_to 'Edit', edit_card_path(card) %></td>
+		<td><%= link_to 'Delete', card, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+		</tr>
+		<% end %>
+</table>
+<%= link_to 'New card', new_card_path %><br>
+<%= link_to 'Users', users_path %>
