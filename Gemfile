@@ -10,6 +10,7 @@ end
 
 group :development do
 	gem 'annotate', '2.5.0'
+	gem 'activerecord-reset-pk-sequence'
 end
 
 # Gems used only for assets and not required

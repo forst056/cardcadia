@@ -22,6 +22,7 @@ GEM
       activesupport (= 3.2.11)
       arel (~> 3.0.2)
       tzinfo (~> 0.3.29)
+    activerecord-reset-pk-sequence (0.2.0)
     activeresource (3.2.11)
       activemodel (= 3.2.11)
       activesupport (= 3.2.11)
@@ -151,6 +152,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activerecord-reset-pk-sequence
   annotate (= 2.5.0)
   bootstrap-sass (= 2.1)
   capybara (= 1.1.2)
